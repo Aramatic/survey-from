@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="./form-css.css">
+</head>
+<body>
+  <div class="container">
+  <div class="header">
+    <header id="survey-form">
+      <h1 id="title " class="text-center">Survey Form</h1>
+      <p id="descriptiion" class="dexcription-text-center">Fill this form</p>
+    </header>
+    <form class="form">
+      <div class="survey-form">
+        <label for="name" class="form-group" id="name-lanel" > Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+      <div class="survey-form">
+        <label for="email" id="email-label" class="form-group" >Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+      <div class="survey-form">
+        <label for="age" id="age-label" class="form-group" >Age</label>
+        <input type="text" name="age" id="age" class="form-control" placeholder="Enter your age" required>
+      </div>
+      <div class="survey-form">
+        <p>Whic option best describe your current role</p>
+        <select name="role" id="dropdown" class="form-control" required>
+          <option disabled selected value>Selelect Current Role</option>
+          <option value="student"> Student</option>
+          <option value="part-time-job">Pat time job</option>
+          <option value="full">Full time job</option>
+          <option value="learner">Learner</option>
+          <option value="not">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="survey-form">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label >
+          <input type="radio" name="user-recommend" class="input-radio" value="Definitely">
+          Definitely
+        </label>
+        <label >
+          <input type="radio" name="user-recommend" class="input-radio" value="maybe">Maybe
+        </label>
+        <label >
+          <input type="radio" name="user-recommend" class="input-radio" value="notsure"> Not Sure
+        </label>
+      </div>
+      <div class="survey-form">
+        <p>What is your favorite feature of Freecodecap</p>
+        <select name="option" id="favorite" class="form-control" >
+          <option disable selected value>Select your option   
+          </option>
+          <option value="challenges">Challenges</option>
+          <option value="open">Open Source</option>
+          <option value="community">community</option>
+          
+        </select>
+      </div>
+      <div class="survey-form">
+        <textarea name="text" id="text" cols="30" rows="10">
+        </textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="ok" class="submit-button">submit</button>
+      </div>
+    </form>
+  </div>
+  </div>
+</body>
+</html>
